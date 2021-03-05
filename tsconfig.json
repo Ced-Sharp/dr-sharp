@@ -1,0 +1,20 @@
+{
+  "extends": "@chatie/tsconfig",
+  "include": ["./src/**/*", "test/**/*.test.ts"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "CommonJS",
+    "lib": ["ES2015", "ES2016", "ES2017", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": [
+      "@types/node"
+    ]
+  }
+}
